@@ -49,6 +49,5 @@ class CreateTransactionForm extends AsyncForm {
                 return;
             }
         })
-        Transaction.create(data);
     }
 }

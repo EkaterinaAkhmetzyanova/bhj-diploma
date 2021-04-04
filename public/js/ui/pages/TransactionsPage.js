@@ -32,18 +32,17 @@ class TransactionsPage {
      * TransactionsPage.removeAccount соответственно
      * */
     registerEvents() {
-        const removeAccountBtn = this.element.querySelector(".remove-account");
-        removeAccountBtn.addEventListener("click", function() {
-            this.removeAccount();
-        })
+        const removeAccountButtons = this.element.querySelectorAll(".remove-account");
+        for (let button of removeAccountButtons) {
+            button.addEventListener("click", () => this.removeAccount());
+        }
 
-        this.element.addEventListener("click", function(e) {
-            const transactionRemove = e.target.closest(".transaction__remove");
-            e.preventDefault();
-            if (transactionRemove) {
-                this.removeTransaction(transactionRemove.dataset.id);
+        this.element.addEventListener("click", (e) => {
+            if (e.target.closest(".transaction__remove")) {
+                let id = e.target.closest(".transaction__remove").dataset.id;
+                this.removeTransaction(id);
             }
-        })
+        });
     }
 
     /**
@@ -57,14 +56,16 @@ class TransactionsPage {
      * */
     removeAccount() {
         if (this.lastOptions) {
-            let accountRemovalCOnfirm = confirm("Вы действительно хотите удалить счёт?");
-            if (accountRemovalCOnfirm) {
+            let accountRemovalConfirm = confirm("Вы действительно хотите удалить счёт?");
+            if (accountRemovalConfirm) {
                 Account.remove(this.lastOptions.account_id, {}, (err, response) => {
                     if (response && response.success) {
-                        this.clear();
                         App.updateWidgets();
                     }
                 })
+                this.clear();
+            } else {
+                return;
             }
         }
     }
@@ -84,6 +85,8 @@ class TransactionsPage {
                         App.update();
                     }
                 })
+            } else {
+                return;
             }
         }
     }
@@ -98,9 +101,7 @@ class TransactionsPage {
         if (options) {
             this.lastOptions = options;
             Account.get(options.account_id, {}, (err, response) => {
-                if (response) {
-                    this.renderTitle(response.data.name);
-                }
+                this.renderTitle(response.data.name);
             });
             Transaction.list(options, (err, response) => {
                 if (response.data) {
@@ -137,7 +138,7 @@ class TransactionsPage {
     formatDate(date) {
         let newDate = new Date(date);
         let months = ["января", "февраля", "марта", "апреля", "мая", "июня", "июля", "августа", "сентября", "октября", "ноября", "декабря"]
-        let year = newDate.getDate();
+        let year = newDate.getFullYear();
         let month = months[newDate.getMonth()];
         let day = newDate.getDate();
         let hours = newDate.getHours();
@@ -147,7 +148,7 @@ class TransactionsPage {
         } else if (minutes < 10) {
             minutes = `0${minutes}`;
         }
-        return (`${date} ${month} ${year} г. в ${hours}:${minutes}`);
+        return (`${day} ${month} ${year} г. в ${hours}:${minutes}`);
     }
 
     /**
@@ -156,8 +157,8 @@ class TransactionsPage {
      * */
     getTransactionHTML(item) {
         const transactionDiv = document.createElement("DIV");
-        transactionDiv.classList = `transaction transaction_${item.type} row`;
-        transactionDiv.innerHTML += `
+        return transactionDiv.innerHTML += `
+        <div class="transaction transaction_${item.type} row">
           <div class="col-md-7 transaction__details">
             <div class="transaction__icon">
             <span class="fa fa-money fa-2x"></span>
@@ -177,20 +178,21 @@ class TransactionsPage {
               <i class="fa fa-trash"></i>  
           </button>
          </div>
+        </div>
       `
     }
 
     /**
      * Отрисовывает список транзакций на странице
-     * используя getTransactionHTML
+     * используя getTransactionHTML 
      * */
     renderTransactions(data) {
         const contentElement = this.element.querySelector(".content");
         if (data) {
             contentElement.innerHTML = "";
-        }
-        for (item of data) {
-            contentElement.innerHTML += this.getTransactionHTML(item);
+            for (let i = 0; i < data.length; i++) {
+                contentElement.innerHTML += this.getTransactionHTML(data[i]);
+            }
         }
     }
 }

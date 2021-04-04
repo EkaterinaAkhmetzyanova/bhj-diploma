@@ -3,6 +3,13 @@
  * на сервер.
  * */
 const createRequest = (options = {}) => {
+    // const f = function() {};
+    // const {
+    //     method = "GET",
+    //         data = {},
+    //         responseType,
+    //         callback = f
+    // } = options;
     const xhr = new XMLHttpRequest();
     const formData = new FormData();
     xhr.withCredentials = true;
@@ -18,11 +25,10 @@ const createRequest = (options = {}) => {
         }
     }
 
-    xhr.addEventListener("readystatechange", function() {
+    xhr.addEventListener("readystatechange", () => {
         if (xhr.readyState === 4 && xhr.status === 200) {
-            const response = xhr.response;
-            options.callback(null, response);
-            console.log(response);
+            options.callback(null, xhr.response);
+            console.log(xhr.response);
         } else if (xhr.readyState === 4 && xhr.status !== 200) {
             const err = new Error("error");
             options.callback(err);

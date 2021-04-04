@@ -11,6 +11,12 @@
       "email": "test@test.ru",
       "password": "abracadabra",
       "id": "zbiv54pwkmv0ek90"
+    },
+    {
+      "name": "Blabla",
+      "email": "lala@lala.ru",
+      "password": "lala",
+      "id": "zbiv568wkn0iciuu"
     }
   ],
   "accounts": [
@@ -28,6 +34,51 @@
       "name": "Бизнес",
       "user_id": "1",
       "id": "3"
+    },
+    {
+      "name": "sberbank",
+      "user_id": "zbiv568wkn0iciuu",
+      "id": "zbiv57m8kn0id822"
+    },
+    {
+      "name": "sber",
+      "user_id": "zbiv54pwkmv0ek90",
+      "id": "zbiv586kkn0ivwgp"
+    },
+    {
+      "name": "alfa",
+      "user_id": "zbiv54pwkmv0ek90",
+      "id": "zbiv58ockn0jj226"
+    },
+    {
+      "name": "vtb",
+      "user_id": "zbiv54pwkmv0ek90",
+      "id": "zbiv53xokn0qhit2"
+    },
+    {
+      "name": "tf",
+      "user_id": "zbiv568wkn0iciuu",
+      "id": "zbiv55pokn0rcm21"
+    },
+    {
+      "name": "lalala",
+      "user_id": "zbiv568wkn0iciuu",
+      "id": "zbiv58bgkn0uopt3"
+    },
+    {
+      "name": "bb",
+      "user_id": "zbiv568wkn0iciuu",
+      "id": "zbiv53c8kn1tvc4q"
+    },
+    {
+      "name": "new",
+      "user_id": "zbiv54pwkmv0ek90",
+      "id": "zbiv57aokn25irib"
+    },
+    {
+      "name": "cash",
+      "user_id": "zbiv568wkn0iciuu",
+      "id": "zbiv57i0kn39oeat"
     }
   ],
   "transactions": [
@@ -165,6 +216,393 @@
       "sum": 300000,
       "type": "expense",
       "user_id": "1"
+    },
+    {
+      "id": "zbiv57z8kn0mq0m8",
+      "type": "income",
+      "name": "salary",
+      "sum": 100000,
+      "account_id": "zbiv57m8kn0id822",
+      "user_id": "zbiv568wkn0iciuu",
+      "created_at": "2021-04-02T18:17:21.055Z"
+    },
+    {
+      "id": "zbiv57z8kn0mq0o2",
+      "type": "income",
+      "name": "salary",
+      "sum": 100000,
+      "account_id": "zbiv57m8kn0id822",
+      "user_id": "zbiv568wkn0iciuu",
+      "created_at": "2021-04-02T18:17:21.122Z"
+    },
+    {
+      "id": "zbiv54fokn0n8cdb",
+      "type": "expense",
+      "name": "meals",
+      "sum": 500,
+      "account_id": "zbiv57m8kn0id822",
+      "user_id": "zbiv568wkn0iciuu",
+      "created_at": "2021-04-02T18:31:36.094Z"
+    },
+    {
+      "id": "zbiv54fokn0n8cgj",
+      "type": "expense",
+      "name": "meals",
+      "sum": 500,
+      "account_id": "zbiv57m8kn0id822",
+      "user_id": "zbiv568wkn0iciuu",
+      "created_at": "2021-04-02T18:31:36.211Z"
+    },
+    {
+      "id": "zbiv523kkn0nnptz",
+      "type": "income",
+      "name": "salary",
+      "sum": 50000,
+      "account_id": "zbiv58ockn0jj226",
+      "user_id": "zbiv54pwkmv0ek90",
+      "created_at": "2021-04-02T18:43:33.382Z"
+    },
+    {
+      "id": "zbiv523kkn0nnq21",
+      "type": "income",
+      "name": "salary",
+      "sum": 50000,
+      "account_id": "zbiv58ockn0jj226",
+      "user_id": "zbiv54pwkmv0ek90",
+      "created_at": "2021-04-02T18:43:33.673Z"
+    },
+    {
+      "id": "zbiv598ckn0pkod5",
+      "type": "income",
+      "name": "meals",
+      "sum": 500,
+      "account_id": "zbiv586kkn0ivwgp",
+      "user_id": "zbiv54pwkmv0ek90",
+      "created_at": "2021-04-02T19:37:10.744Z"
+    },
+    {
+      "id": "zbiv598ckn0pkp6j",
+      "type": "income",
+      "name": "meals",
+      "sum": 500,
+      "account_id": "zbiv586kkn0ivwgp",
+      "user_id": "zbiv54pwkmv0ek90",
+      "created_at": "2021-04-02T19:37:11.803Z"
+    },
+    {
+      "id": "zbiv58c4kn0ploea",
+      "type": "income",
+      "name": "bonus",
+      "sum": 500,
+      "account_id": "zbiv586kkn0ivwgp",
+      "user_id": "zbiv54pwkmv0ek90",
+      "created_at": "2021-04-02T19:37:57.441Z"
+    },
+    {
+      "id": "zbiv58c4kn0plofr",
+      "type": "income",
+      "name": "bonus",
+      "sum": 500,
+      "account_id": "zbiv586kkn0ivwgp",
+      "user_id": "zbiv54pwkmv0ek90",
+      "created_at": "2021-04-02T19:37:57.495Z"
+    },
+    {
+      "id": "zbiv58c4kn0plogd",
+      "type": "income",
+      "name": "bonus",
+      "sum": 500,
+      "account_id": "zbiv586kkn0ivwgp",
+      "user_id": "zbiv54pwkmv0ek90",
+      "created_at": "2021-04-02T19:37:57.517Z"
+    },
+    {
+      "id": "zbiv58c4kn0plole",
+      "type": "income",
+      "name": "bonus",
+      "sum": 500,
+      "account_id": "zbiv586kkn0ivwgp",
+      "user_id": "zbiv54pwkmv0ek90",
+      "created_at": "2021-04-02T19:37:57.698Z"
+    },
+    {
+      "id": "zbiv58c4kn0ploog",
+      "type": "income",
+      "name": "bonus",
+      "sum": 500,
+      "account_id": "zbiv586kkn0ivwgp",
+      "user_id": "zbiv54pwkmv0ek90",
+      "created_at": "2021-04-02T19:37:57.808Z"
+    },
+    {
+      "id": "zbiv58c4kn0plorg",
+      "type": "income",
+      "name": "bonus",
+      "sum": 500,
+      "account_id": "zbiv586kkn0ivwgp",
+      "user_id": "zbiv54pwkmv0ek90",
+      "created_at": "2021-04-02T19:37:57.916Z"
+    },
+    {
+      "id": "zbiv56zkkn0prcui",
+      "type": "expense",
+      "name": "calls",
+      "sum": 300,
+      "account_id": "zbiv57m8kn0id822",
+      "user_id": "zbiv568wkn0iciuu",
+      "created_at": "2021-04-02T19:42:22.409Z"
+    },
+    {
+      "id": "zbiv56zkkn0prcxf",
+      "type": "expense",
+      "name": "calls",
+      "sum": 300,
+      "account_id": "zbiv57m8kn0id822",
+      "user_id": "zbiv568wkn0iciuu",
+      "created_at": "2021-04-02T19:42:22.515Z"
+    },
+    {
+      "id": "zbiv55tokn0prgo4",
+      "type": "expense",
+      "name": "calls",
+      "sum": 300,
+      "account_id": "zbiv57m8kn0id822",
+      "user_id": "zbiv568wkn0iciuu",
+      "created_at": "2021-04-02T19:42:27.363Z"
+    },
+    {
+      "id": "zbiv55tokn0prgpm",
+      "type": "expense",
+      "name": "calls",
+      "sum": 300,
+      "account_id": "zbiv57m8kn0id822",
+      "user_id": "zbiv568wkn0iciuu",
+      "created_at": "2021-04-02T19:42:27.418Z"
+    },
+    {
+      "id": "zbiv57p0kn0prkx3",
+      "type": "expense",
+      "name": "calls",
+      "sum": 300,
+      "account_id": "zbiv57m8kn0id822",
+      "user_id": "zbiv568wkn0iciuu",
+      "created_at": "2021-04-02T19:42:32.870Z"
+    },
+    {
+      "id": "zbiv57p0kn0prkym",
+      "type": "expense",
+      "name": "calls",
+      "sum": 300,
+      "account_id": "zbiv57m8kn0id822",
+      "user_id": "zbiv568wkn0iciuu",
+      "created_at": "2021-04-02T19:42:32.926Z"
+    },
+    {
+      "id": "zbiv55yskn0prnni",
+      "type": "expense",
+      "name": "calls",
+      "sum": 300,
+      "account_id": "zbiv57m8kn0id822",
+      "user_id": "zbiv568wkn0iciuu",
+      "created_at": "2021-04-02T19:42:36.413Z"
+    },
+    {
+      "id": "zbiv55yskn0prnps",
+      "type": "expense",
+      "name": "calls",
+      "sum": 300,
+      "account_id": "zbiv57m8kn0id822",
+      "user_id": "zbiv568wkn0iciuu",
+      "created_at": "2021-04-02T19:42:36.496Z"
+    },
+    {
+      "id": "zbiv56fkkn0prw1b",
+      "type": "expense",
+      "name": "calls",
+      "sum": 300,
+      "account_id": "zbiv57m8kn0id822",
+      "user_id": "zbiv568wkn0iciuu",
+      "created_at": "2021-04-02T19:42:47.278Z"
+    },
+    {
+      "id": "zbiv56fkkn0prw39",
+      "type": "expense",
+      "name": "calls",
+      "sum": 300,
+      "account_id": "zbiv57m8kn0id822",
+      "user_id": "zbiv568wkn0iciuu",
+      "created_at": "2021-04-02T19:42:47.349Z"
+    },
+    {
+      "id": "zbiv59y4kn0pso2s",
+      "type": "expense",
+      "name": "calls",
+      "sum": 300,
+      "account_id": "zbiv57m8kn0id822",
+      "user_id": "zbiv568wkn0iciuu",
+      "created_at": "2021-04-02T19:43:23.619Z"
+    },
+    {
+      "id": "zbiv59y4kn0pso5z",
+      "type": "expense",
+      "name": "calls",
+      "sum": 300,
+      "account_id": "zbiv57m8kn0id822",
+      "user_id": "zbiv568wkn0iciuu",
+      "created_at": "2021-04-02T19:43:23.735Z"
+    },
+    {
+      "id": "zbiv51fkkn0q9r0g",
+      "type": "expense",
+      "name": "credit",
+      "sum": 2000,
+      "account_id": "zbiv586kkn0ivwgp",
+      "user_id": "zbiv54pwkmv0ek90",
+      "created_at": "2021-04-02T19:56:40.575Z"
+    },
+    {
+      "id": "zbiv51fkkn0q9rj2",
+      "type": "expense",
+      "name": "credit",
+      "sum": 2000,
+      "account_id": "zbiv586kkn0ivwgp",
+      "user_id": "zbiv54pwkmv0ek90",
+      "created_at": "2021-04-02T19:56:41.246Z"
+    },
+    {
+      "id": "zbiv5890kn0qbhaf",
+      "type": "income",
+      "name": "gift",
+      "sum": 100,
+      "account_id": "zbiv586kkn0ivwgp",
+      "user_id": "zbiv54pwkmv0ek90",
+      "created_at": "2021-04-02T19:58:01.286Z"
+    },
+    {
+      "id": "zbiv5890kn0qbhfn",
+      "type": "income",
+      "name": "gift",
+      "sum": 100,
+      "account_id": "zbiv586kkn0ivwgp",
+      "user_id": "zbiv54pwkmv0ek90",
+      "created_at": "2021-04-02T19:58:01.475Z"
+    },
+    {
+      "id": "zbiv59kkkn0qj2hl",
+      "type": "income",
+      "name": "apt rent",
+      "sum": 50000,
+      "account_id": "zbiv53xokn0qhit2",
+      "user_id": "zbiv54pwkmv0ek90",
+      "created_at": "2021-04-02T20:03:55.352Z"
+    },
+    {
+      "id": "zbiv59kkkn0qj2m9",
+      "type": "income",
+      "name": "apt rent",
+      "sum": 50000,
+      "account_id": "zbiv53xokn0qhit2",
+      "user_id": "zbiv54pwkmv0ek90",
+      "created_at": "2021-04-02T20:03:55.521Z"
+    },
+    {
+      "id": "zbiv57rwkn0r2btl",
+      "type": "expense",
+      "name": "taxi",
+      "sum": 800,
+      "account_id": "zbiv53xokn0qhit2",
+      "user_id": "zbiv54pwkmv0ek90",
+      "created_at": "2021-04-02T20:18:53.912Z"
+    },
+    {
+      "id": "zbiv57rwkn0r2cdu",
+      "type": "expense",
+      "name": "taxi",
+      "sum": 800,
+      "account_id": "zbiv53xokn0qhit2",
+      "user_id": "zbiv54pwkmv0ek90",
+      "created_at": "2021-04-02T20:18:54.642Z"
+    },
+    {
+      "id": "zbiv59ukkn0r3fbz",
+      "type": "expense",
+      "name": "bus",
+      "sum": 100,
+      "account_id": "zbiv53xokn0qhit2",
+      "user_id": "zbiv54pwkmv0ek90",
+      "created_at": "2021-04-02T20:19:45.119Z"
+    },
+    {
+      "id": "zbiv54i4kn0sle9x",
+      "type": "income",
+      "name": "part-time job",
+      "sum": 15000,
+      "account_id": "zbiv55pokn0rcm21",
+      "user_id": "zbiv568wkn0iciuu",
+      "created_at": "2021-04-02T21:01:43.172Z"
+    },
+    {
+      "id": "zbiv54zgkn0smfu9",
+      "type": "income",
+      "name": "part-time job",
+      "sum": 15000,
+      "account_id": "zbiv55pokn0rcm21",
+      "user_id": "zbiv568wkn0iciuu",
+      "created_at": "2021-04-02T21:02:31.856Z"
+    },
+    {
+      "id": "zbiv561wkn1tw2u9",
+      "type": "income",
+      "name": "transfer",
+      "sum": 5000,
+      "account_id": "zbiv53c8kn1tvc4q",
+      "user_id": "zbiv568wkn0iciuu",
+      "created_at": "2021-04-03T14:25:47.360Z"
+    },
+    {
+      "id": "zbiv58wwkn1tzexu",
+      "type": "expense",
+      "name": "metro",
+      "sum": 200,
+      "account_id": "zbiv53c8kn1tvc4q",
+      "user_id": "zbiv568wkn0iciuu",
+      "created_at": "2021-04-03T14:28:23.009Z"
+    },
+    {
+      "id": "zbiv54kskn25jjqa",
+      "type": "income",
+      "name": "llll",
+      "sum": 200,
+      "account_id": "zbiv57aokn25irib",
+      "user_id": "zbiv54pwkmv0ek90",
+      "created_at": "2021-04-03T19:51:58.113Z"
+    },
+    {
+      "id": "zbiv59qwkn2b6of2",
+      "type": "expense",
+      "name": "jlkj",
+      "sum": 5000,
+      "account_id": "zbiv57m8kn0id822",
+      "user_id": "zbiv568wkn0iciuu",
+      "created_at": "2021-04-03T22:29:55.357Z"
+    },
+    {
+      "id": "zbiv57i0kn39otuk",
+      "type": "income",
+      "name": "lunch",
+      "sum": 300,
+      "account_id": "zbiv57i0kn39oeat",
+      "user_id": "zbiv568wkn0iciuu",
+      "created_at": "2021-04-04T14:35:49.148Z"
+    },
+    {
+      "id": "zbiv55xgkn39snf2",
+      "type": "expense",
+      "name": "bus",
+      "sum": 50,
+      "account_id": "zbiv57i0kn39oeat",
+      "user_id": "zbiv568wkn0iciuu",
+      "created_at": "2021-04-04T14:38:47.437Z"
     }
   ]
 }

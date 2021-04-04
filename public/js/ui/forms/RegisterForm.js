@@ -19,6 +19,5 @@ class RegisterForm extends AsyncForm {
                 return;
             }
         })
-
     }
 }

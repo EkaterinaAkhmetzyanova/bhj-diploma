@@ -30,14 +30,13 @@ class AccountsWidget {
      * вызывает AccountsWidget.onSelectAccount()
      * */
     registerEvents() {
-        this.element.addEventListener("click", function(e) {
+        this.element.addEventListener("click", (e) => {
             if (e.target.closest(".create-account")) {
                 App.getModal("createAccount").open();
             } else if (e.target.closest(".account")) {
                 this.onSelectAccount(e.target.closest(".account"));
             }
         })
-
     }
 
     /**
@@ -62,7 +61,6 @@ class AccountsWidget {
                 }
             })
         }
-
     }
 
     /**
@@ -75,7 +73,6 @@ class AccountsWidget {
         for (let account of accounts) {
             account.remove();
         }
-
     }
 
     /**
@@ -87,8 +84,8 @@ class AccountsWidget {
      * */
     onSelectAccount(element) {
         const accounts = this.element.querySelectorAll(".account");
-        for (let account of accounts) {
-            account.classList.remove("active");
+        for (let i = 0; i < accounts.length; i++) {
+            accounts[i].classList.remove("active");
         }
         element.classList.add("active");
         App.showPage("transactions", { account_id: element.dataset.id });
@@ -115,6 +112,6 @@ class AccountsWidget {
      * и добавляет его внутрь элемента виджета
      * */
     renderItem(data) {
-        this.element.insertAdjasentHTML("beforeEnd", this.getAccountHTML(data));
+        this.element.insertAdjacentHTML("beforeEnd", this.getAccountHTML(data));
     }
 }

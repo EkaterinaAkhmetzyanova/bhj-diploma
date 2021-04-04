@@ -15,10 +15,12 @@ class Entity {
             responseType: "json",
             data,
             callback: (err, response) => {
+                if (!response.success) {
+                    return;
+                }
                 callback(err, response);
             }
         })
-
     }
 
     /**
@@ -33,6 +35,9 @@ class Entity {
             responseType: "json",
             data,
             callback: (err, response) => {
+                if (!response.success) {
+                    return;
+                }
                 callback(err, response);
             }
         })
@@ -49,6 +54,9 @@ class Entity {
             responseType: "json",
             data,
             callback: (err, response) => {
+                if (!response.success) {
+                    return;
+                }
                 callback(err, response);
             }
         })
