@@ -34,7 +34,9 @@ class TransactionsPage {
     registerEvents() {
         const removeAccountButtons = this.element.querySelectorAll(".remove-account");
         for (let button of removeAccountButtons) {
-            button.addEventListener("click", () => this.removeAccount());
+            button.addEventListener("click", () => {
+                this.removeAccount();
+            });
         }
 
         this.element.addEventListener("click", (e) => {
@@ -58,14 +60,13 @@ class TransactionsPage {
         if (this.lastOptions) {
             let accountRemovalConfirm = confirm("Вы действительно хотите удалить счёт?");
             if (accountRemovalConfirm) {
-                Account.remove(this.lastOptions.account_id, {}, (err, response) => {
-                    if (response && response.success) {
-                        App.updateWidgets();
+                Account.remove(this.lastOptions, (err, response) => {
+                    if (err) {
+                        return;
                     }
-                })
-                this.clear();
-            } else {
-                return;
+                    App.updateWidgets();
+                    this.clear();
+                });
             }
         }
     }
@@ -80,13 +81,12 @@ class TransactionsPage {
         if (id) {
             let transactionRemovalConfirm = confirm("Вы действительно хотите удалить эту транзакцию?");
             if (transactionRemovalConfirm) {
-                Transaction.remove(id, {}, (err, response) => {
-                    if (response && response.success) {
-                        App.update();
+                Transaction.remove({ id }, (err, response) => {
+                    if (err) {
+                        return;
                     }
+                    App.update();
                 })
-            } else {
-                return;
             }
         }
     }
@@ -100,7 +100,7 @@ class TransactionsPage {
     render(options) {
         if (options) {
             this.lastOptions = options;
-            Account.get(options.account_id, {}, (err, response) => {
+            Account.get(options.account_id, (err, response) => {
                 this.renderTitle(response.data.name);
             });
             Transaction.list(options, (err, response) => {

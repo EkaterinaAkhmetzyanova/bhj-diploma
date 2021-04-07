@@ -36,11 +36,6 @@
       "id": "3"
     },
     {
-      "name": "sberbank",
-      "user_id": "zbiv568wkn0iciuu",
-      "id": "zbiv57m8kn0id822"
-    },
-    {
       "name": "sber",
       "user_id": "zbiv54pwkmv0ek90",
       "id": "zbiv586kkn0ivwgp"
@@ -79,6 +74,16 @@
       "name": "cash",
       "user_id": "zbiv568wkn0iciuu",
       "id": "zbiv57i0kn39oeat"
+    },
+    {
+      "name": "hhh",
+      "user_id": "zbiv568wkn0iciuu",
+      "id": "zbiv53fckn6e4vb3"
+    },
+    {
+      "name": "lll",
+      "user_id": "zbiv568wkn0iciuu",
+      "id": "zbiv595wkn7tvjyc"
     }
   ],
   "transactions": [
@@ -218,42 +223,6 @@
       "user_id": "1"
     },
     {
-      "id": "zbiv57z8kn0mq0m8",
-      "type": "income",
-      "name": "salary",
-      "sum": 100000,
-      "account_id": "zbiv57m8kn0id822",
-      "user_id": "zbiv568wkn0iciuu",
-      "created_at": "2021-04-02T18:17:21.055Z"
-    },
-    {
-      "id": "zbiv57z8kn0mq0o2",
-      "type": "income",
-      "name": "salary",
-      "sum": 100000,
-      "account_id": "zbiv57m8kn0id822",
-      "user_id": "zbiv568wkn0iciuu",
-      "created_at": "2021-04-02T18:17:21.122Z"
-    },
-    {
-      "id": "zbiv54fokn0n8cdb",
-      "type": "expense",
-      "name": "meals",
-      "sum": 500,
-      "account_id": "zbiv57m8kn0id822",
-      "user_id": "zbiv568wkn0iciuu",
-      "created_at": "2021-04-02T18:31:36.094Z"
-    },
-    {
-      "id": "zbiv54fokn0n8cgj",
-      "type": "expense",
-      "name": "meals",
-      "sum": 500,
-      "account_id": "zbiv57m8kn0id822",
-      "user_id": "zbiv568wkn0iciuu",
-      "created_at": "2021-04-02T18:31:36.211Z"
-    },
-    {
       "id": "zbiv523kkn0nnptz",
       "type": "income",
       "name": "salary",
@@ -344,114 +313,6 @@
       "created_at": "2021-04-02T19:37:57.916Z"
     },
     {
-      "id": "zbiv56zkkn0prcui",
-      "type": "expense",
-      "name": "calls",
-      "sum": 300,
-      "account_id": "zbiv57m8kn0id822",
-      "user_id": "zbiv568wkn0iciuu",
-      "created_at": "2021-04-02T19:42:22.409Z"
-    },
-    {
-      "id": "zbiv56zkkn0prcxf",
-      "type": "expense",
-      "name": "calls",
-      "sum": 300,
-      "account_id": "zbiv57m8kn0id822",
-      "user_id": "zbiv568wkn0iciuu",
-      "created_at": "2021-04-02T19:42:22.515Z"
-    },
-    {
-      "id": "zbiv55tokn0prgo4",
-      "type": "expense",
-      "name": "calls",
-      "sum": 300,
-      "account_id": "zbiv57m8kn0id822",
-      "user_id": "zbiv568wkn0iciuu",
-      "created_at": "2021-04-02T19:42:27.363Z"
-    },
-    {
-      "id": "zbiv55tokn0prgpm",
-      "type": "expense",
-      "name": "calls",
-      "sum": 300,
-      "account_id": "zbiv57m8kn0id822",
-      "user_id": "zbiv568wkn0iciuu",
-      "created_at": "2021-04-02T19:42:27.418Z"
-    },
-    {
-      "id": "zbiv57p0kn0prkx3",
-      "type": "expense",
-      "name": "calls",
-      "sum": 300,
-      "account_id": "zbiv57m8kn0id822",
-      "user_id": "zbiv568wkn0iciuu",
-      "created_at": "2021-04-02T19:42:32.870Z"
-    },
-    {
-      "id": "zbiv57p0kn0prkym",
-      "type": "expense",
-      "name": "calls",
-      "sum": 300,
-      "account_id": "zbiv57m8kn0id822",
-      "user_id": "zbiv568wkn0iciuu",
-      "created_at": "2021-04-02T19:42:32.926Z"
-    },
-    {
-      "id": "zbiv55yskn0prnni",
-      "type": "expense",
-      "name": "calls",
-      "sum": 300,
-      "account_id": "zbiv57m8kn0id822",
-      "user_id": "zbiv568wkn0iciuu",
-      "created_at": "2021-04-02T19:42:36.413Z"
-    },
-    {
-      "id": "zbiv55yskn0prnps",
-      "type": "expense",
-      "name": "calls",
-      "sum": 300,
-      "account_id": "zbiv57m8kn0id822",
-      "user_id": "zbiv568wkn0iciuu",
-      "created_at": "2021-04-02T19:42:36.496Z"
-    },
-    {
-      "id": "zbiv56fkkn0prw1b",
-      "type": "expense",
-      "name": "calls",
-      "sum": 300,
-      "account_id": "zbiv57m8kn0id822",
-      "user_id": "zbiv568wkn0iciuu",
-      "created_at": "2021-04-02T19:42:47.278Z"
-    },
-    {
-      "id": "zbiv56fkkn0prw39",
-      "type": "expense",
-      "name": "calls",
-      "sum": 300,
-      "account_id": "zbiv57m8kn0id822",
-      "user_id": "zbiv568wkn0iciuu",
-      "created_at": "2021-04-02T19:42:47.349Z"
-    },
-    {
-      "id": "zbiv59y4kn0pso2s",
-      "type": "expense",
-      "name": "calls",
-      "sum": 300,
-      "account_id": "zbiv57m8kn0id822",
-      "user_id": "zbiv568wkn0iciuu",
-      "created_at": "2021-04-02T19:43:23.619Z"
-    },
-    {
-      "id": "zbiv59y4kn0pso5z",
-      "type": "expense",
-      "name": "calls",
-      "sum": 300,
-      "account_id": "zbiv57m8kn0id822",
-      "user_id": "zbiv568wkn0iciuu",
-      "created_at": "2021-04-02T19:43:23.735Z"
-    },
-    {
       "id": "zbiv51fkkn0q9r0g",
       "type": "expense",
       "name": "credit",
@@ -533,33 +394,6 @@
       "created_at": "2021-04-02T20:19:45.119Z"
     },
     {
-      "id": "zbiv54i4kn0sle9x",
-      "type": "income",
-      "name": "part-time job",
-      "sum": 15000,
-      "account_id": "zbiv55pokn0rcm21",
-      "user_id": "zbiv568wkn0iciuu",
-      "created_at": "2021-04-02T21:01:43.172Z"
-    },
-    {
-      "id": "zbiv54zgkn0smfu9",
-      "type": "income",
-      "name": "part-time job",
-      "sum": 15000,
-      "account_id": "zbiv55pokn0rcm21",
-      "user_id": "zbiv568wkn0iciuu",
-      "created_at": "2021-04-02T21:02:31.856Z"
-    },
-    {
-      "id": "zbiv561wkn1tw2u9",
-      "type": "income",
-      "name": "transfer",
-      "sum": 5000,
-      "account_id": "zbiv53c8kn1tvc4q",
-      "user_id": "zbiv568wkn0iciuu",
-      "created_at": "2021-04-03T14:25:47.360Z"
-    },
-    {
       "id": "zbiv58wwkn1tzexu",
       "type": "expense",
       "name": "metro",
@@ -576,15 +410,6 @@
       "account_id": "zbiv57aokn25irib",
       "user_id": "zbiv54pwkmv0ek90",
       "created_at": "2021-04-03T19:51:58.113Z"
-    },
-    {
-      "id": "zbiv59qwkn2b6of2",
-      "type": "expense",
-      "name": "jlkj",
-      "sum": 5000,
-      "account_id": "zbiv57m8kn0id822",
-      "user_id": "zbiv568wkn0iciuu",
-      "created_at": "2021-04-03T22:29:55.357Z"
     },
     {
       "id": "zbiv57i0kn39otuk",

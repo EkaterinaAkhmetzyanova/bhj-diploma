@@ -14,7 +14,6 @@ const createRequest = (options = {}) => {
     const formData = new FormData();
     xhr.withCredentials = true;
     xhr.responseType = options.responseType;
-
     if (options.method === "GET") {
         for (let key in options.data) {
             options.url += `?${key}=${options.data[key]}&`;
