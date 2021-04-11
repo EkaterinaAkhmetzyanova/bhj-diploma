@@ -59,14 +59,19 @@ class TransactionsPage {
     removeAccount() {
         if (this.lastOptions) {
             let accountRemovalConfirm = confirm("Вы действительно хотите удалить счёт?");
+            console.log(this.lastOptions);
             if (accountRemovalConfirm) {
+                this.lastOptions = {
+                    id: this.lastOptions.account_id,
+                };
                 Account.remove(this.lastOptions, (err, response) => {
                     if (err) {
                         return;
                     }
                     App.updateWidgets();
-                    this.clear();
+
                 });
+                this.clear();
             }
         }
     }
@@ -99,6 +104,7 @@ class TransactionsPage {
      * */
     render(options) {
         if (options) {
+            console.log(this.lastOptions);
             this.lastOptions = options;
             Account.get(options.account_id, (err, response) => {
                 this.renderTitle(response.data.name);

@@ -3,13 +3,7 @@
  * на сервер.
  * */
 const createRequest = (options = {}) => {
-    // const f = function() {};
-    // const {
-    //     method = "GET",
-    //         data = {},
-    //         responseType,
-    //         callback = f
-    // } = options;
+
     const xhr = new XMLHttpRequest();
     const formData = new FormData();
     xhr.withCredentials = true;

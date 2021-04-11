@@ -88,7 +88,8 @@ class AccountsWidget {
             accounts[i].classList.remove("active");
         }
         element.classList.add("active");
-        App.showPage("transactions", { account_id: element.dataset.id });
+        const { id } = element.dataset;
+        App.showPage("transactions", { account_id: id });
     }
 
     /**
@@ -97,6 +98,7 @@ class AccountsWidget {
      * item - объект с данными о счёте
      * */
     getAccountHTML(item) {
+        console.log(item);
         return `<li class="account" data-id=${item.id}>
               <a href="#">
                   <span>${item.name}</span> /

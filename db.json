@@ -51,39 +51,9 @@
       "id": "zbiv53xokn0qhit2"
     },
     {
-      "name": "tf",
-      "user_id": "zbiv568wkn0iciuu",
-      "id": "zbiv55pokn0rcm21"
-    },
-    {
-      "name": "lalala",
-      "user_id": "zbiv568wkn0iciuu",
-      "id": "zbiv58bgkn0uopt3"
-    },
-    {
-      "name": "bb",
-      "user_id": "zbiv568wkn0iciuu",
-      "id": "zbiv53c8kn1tvc4q"
-    },
-    {
       "name": "new",
       "user_id": "zbiv54pwkmv0ek90",
       "id": "zbiv57aokn25irib"
-    },
-    {
-      "name": "cash",
-      "user_id": "zbiv568wkn0iciuu",
-      "id": "zbiv57i0kn39oeat"
-    },
-    {
-      "name": "hhh",
-      "user_id": "zbiv568wkn0iciuu",
-      "id": "zbiv53fckn6e4vb3"
-    },
-    {
-      "name": "lll",
-      "user_id": "zbiv568wkn0iciuu",
-      "id": "zbiv595wkn7tvjyc"
     }
   ],
   "transactions": [
@@ -394,15 +364,6 @@
       "created_at": "2021-04-02T20:19:45.119Z"
     },
     {
-      "id": "zbiv58wwkn1tzexu",
-      "type": "expense",
-      "name": "metro",
-      "sum": 200,
-      "account_id": "zbiv53c8kn1tvc4q",
-      "user_id": "zbiv568wkn0iciuu",
-      "created_at": "2021-04-03T14:28:23.009Z"
-    },
-    {
       "id": "zbiv54kskn25jjqa",
       "type": "income",
       "name": "llll",
@@ -412,22 +373,13 @@
       "created_at": "2021-04-03T19:51:58.113Z"
     },
     {
-      "id": "zbiv57i0kn39otuk",
+      "id": "zbiv57xckndbngxv",
       "type": "income",
-      "name": "lunch",
-      "sum": 300,
-      "account_id": "zbiv57i0kn39oeat",
-      "user_id": "zbiv568wkn0iciuu",
-      "created_at": "2021-04-04T14:35:49.148Z"
-    },
-    {
-      "id": "zbiv55xgkn39snf2",
-      "type": "expense",
-      "name": "bus",
+      "name": "jhjkjkjkjkjjkl",
       "sum": 50,
-      "account_id": "zbiv57i0kn39oeat",
+      "account_id": "zbiv5rokndbm3nk",
       "user_id": "zbiv568wkn0iciuu",
-      "created_at": "2021-04-04T14:38:47.437Z"
+      "created_at": "2021-04-11T15:28:26.754Z"
     }
   ]
 }
